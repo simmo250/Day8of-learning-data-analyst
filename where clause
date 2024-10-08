@@ -1,0 +1,32 @@
+create database Simran; 
+show databases; 
+use Simran; 
+select database(); 
+create table persons(
+personId int,
+firstname varchar(50),
+lastname varchar(50)
+); 
+describe persons; 
+alter table persons add email varchar(100);  
+create table abhays(
+abhayid int primary key,
+firstname varchar(40),
+lastname varchar(50),
+address varchar(90) 
+); 
+describe abhays;
+
+insert into abhays(abhayid, firstname, lastname, address)
+values (1,'simran','Gupta','Orai'),
+        (2,'Rupal', 'Gupta', 'Rath'),
+        (3, 'Aman', 'Gupta', 'kanpur'); 
+        
+select * from abhays;
+
+
+SELECT * FROM abhays
+WHERE address='Rath'; 
+
+SELECT * FROM abhays
+WHERE abhayid=2; 
